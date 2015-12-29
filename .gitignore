@@ -2,9 +2,9 @@
 *~
 .DS_Store
 *.credentials.json
-deployment.environments.json
+#deployment.environments.json
 build/
 bin/
 node_modules/
 vendor/
-src/config.js
+#src/config.js

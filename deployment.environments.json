@@ -1,0 +1,30 @@
+{
+  "development": {
+    "mixpanel"    : "REPLACEME",
+    "ga_account"  : "",
+    "ga_id"       : "",
+    "api"         : "https://data.ripple.com/v2",
+    "domain"      : "http://localhost",
+    "maintenance" : false
+  },
+  
+  "staging": {
+    "mixpanel"    : "REPLACEME",
+    "ga_account"  : "",
+    "ga_id"       : "",
+    "api"         : "https://data.ripple.com/v2",
+    "domain"      : "http://staging.example.com",
+    "bucket"      : "staging-bucket",
+    "cloudflare_domain": "REPLACEME"
+  },
+  
+  "production": {
+    "mixpanel"    : "REPLACEME",
+    "ga_account"  : "",
+    "ga_id"       : "",
+    "api"         : "https://data.ripple.com/v2",
+    "domain"      : "http://example.com",
+    "bucket"      : "production-bucket",
+    "cloudflare_domain": "REPLACEME"
+  }
+}

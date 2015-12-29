@@ -146,7 +146,7 @@ var OrderBook = function (options) {
     var priceBook = { };
     var offer;
     var price;
-    var sig = 4; //significant digits for price
+    var sig = 5; //significant digits for price
     var exponent;
     var precision;
     var amount;
