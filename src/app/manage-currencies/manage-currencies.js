@@ -33,7 +33,7 @@ angular.module( 'ripplecharts.manage-currencies', [
     Options.base || {currency:"XRP", issuer:""};
 
   $scope.trade = store.session.get('trade') || store.get('trade') ||
-    Options.trade || {currency:"USD", issuer:"rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"};
+    Options.trade || {currency:"CNY", issuer:"rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y"};
 
   //Add standard currency boxes
   currencies.forEach(function(currency, i) {

@@ -1,23 +1,21 @@
 <div>
   <div class="main container landing">
     <div class="helpbox" ng-class="{showHelp : showHelp}">
-      <h3>Welcome to Ripple Charts</h3>
+      <h3>欢迎使用瑞狐行情</h3>
       <p>
-        This charting site was built by Ripple to provide live and historical data about
-        the Ripple network. This site is open for anyone to use, alter and embed.  The source
-        code is available <a href="https://github.com/ripple/ripplecharts-frontend" target="_blank">here</a>.
+      	行情信息由Ripple实时数据和历史数据组成，是您有力的帮手。本工具由瑞狐团队根据<a href="https://github.com/ripple/ripplecharts-frontend" target="_blank">Ripple Charts</a>改进而成。
       </p>
     </div>
     <div class="row">
       <div class="col-md-6 stats">
         <h5>
-          Ripple Network Stats
+          Ripple网络状态
           <select id="valueCurrency" class="valueCurrencySelect"></select>
           <span class="valueRateDisplay" ng-bind="valueRateDisplay"></span>
         </h5>
         <ul>
           <li>
-            <label>XRP Capitalization:</label>
+            <label>XRP 总市值:</label>
             <div class="stat">
               <span ng-show="valueRate" ng-bind="xrpCapitalization"></span>
               <img  ng-hide="xrpCapitalization" src="assets/images/rippleThrobber.png" class="loader"/>
@@ -25,46 +23,46 @@
             <div class="details"></div>
           </li>
           <li>
-            <label>Issued Value:</label>
+            <label>流通市值:</label>
             <div class="stat">
               <span ng-show="valueRate" ng-bind="issuedValue"></span>
               <img  ng-hide="issuedValue" src="assets/images/rippleThrobber.png" class="loader"/>
             </div>
             <div class="details">
               <div ng-show="issuedValue && issuedValue != ' '" ng-click="metricDetail='issuedValue'" ng-class="{selected : metricDetail == 'issuedValue' }">
-                Detail
+              	详情
                 <img src="assets/images/triangle.svg"/>
               </div>
             </div>
           </li>
           <li>
-            <label>24hr Payment Volume:</label>
+            <label>24小时支付量:</label>
             <div class="stat">
               <span ng-show="valueRate" ng-bind="paymentVolume"></span>
               <img  ng-hide="paymentVolume" src="assets/images/rippleThrobber.png" class="loader"/>
             </div>
             <div class="details">
               <div ng-show="paymentVolume && paymentVolume != ' '" ng-click="metricDetail='paymentVolume'" ng-class="{selected : metricDetail == 'paymentVolume' }">
-                Detail
+              	详情
                 <img src="assets/images/triangle.svg"/>
               </div>
             </div>
           </li>
           <li>
-            <label>24hr Trade Volume:</label>
+            <label>24小时交易量:</label>
             <div class="stat">
               <span ng-show="valueRate" ng-bind="tradeVolume"></span>
               <img  ng-hide="tradeVolume" src="assets/images/rippleThrobber.png" class="loader"/>
             </div>
             <div class="details">
               <div ng-show="tradeVolume && tradeVolume != ' '" ng-click="metricDetail='tradeVolume'" ng-class="{selected : metricDetail == 'tradeVolume' }">
-                Detail
+              	详情
                 <img src="assets/images/triangle.svg"/>
               </div>
             </div>
           </li>
           <li>
-            <label>Total XRP:</label>
+            <label>XRP总量:</label>
             <div class="stat">
               <span ng-bind="totalCoins"></span>
               <img ng-hide="totalCoins" src="assets/images/rippleThrobber.png" class="loader"/>
@@ -72,7 +70,7 @@
             <div class="details"></div>
           </li>
           <li>
-            <label>Ledger #:</label>
+            <label>总账 #:</label>
             <div class="stat">
               <span ng-bind="ledgerIndex"></span>
               <img ng-hide="ledgerIndex" src="assets/images/rippleThrobber.png" class="loader"/>
@@ -80,7 +78,7 @@
             <div class="details"></div>
           </li>
           <li>
-            <label># of Ripple accounts:</label>
+            <label># 账户数:</label>
             <div class="stat">
               <span ng-bind="totalAccounts"></span>
               <img ng-hide="totalAccounts" src="assets/images/rippleThrobber.png" class="loader"/>
@@ -91,13 +89,13 @@
       </div>
       <div class="col-md-6">
         <h5>
-          <span ng-bind="metricDetailTitle"></span>
-          <a class="explore" href="#/trade-volume" ng-show="metricDetail === 'tradeVolume'">Explore</a>
+          <span>24小时内交易量</span>
+          <a class="explore" href="#/trade-volume" ng-show="metricDetail === 'tradeVolume'">浏览</a>
         </h5>
         <div id="metricDetail"></div>
       </div>
     </div>
-    <h5>Top Markets</h5>
+    <h5>主流市场</h5>
     <div id="topMarkets"></div>
   </div>
 </div>

@@ -62,8 +62,8 @@ var colors = [
 var currencies = {
   "USD":"rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
   "BTC":"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
-  "CNY":"razqQKzJRdB4UxFPWf5NEpEG3WMkmwgcXA",
+  "CNY":"rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
   "EUR":"rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q",
-  "JPY":"rMAz5ZnK73nyNUL4foAvaxdreczCkG3vA6",
+  "JPY":"r94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN",
   "XRP":""
 };

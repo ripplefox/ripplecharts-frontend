@@ -84,27 +84,34 @@ angular.module( 'ripplecharts.landing', [
   });
 
 
-  markets.list([
-    {
-      base    : {currency:'XRP'},
-      counter : {currency:'USD', issuer:'rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq'}
-    }, {
-      base    : {currency:'XRP'},
-      counter : {currency:'JPY', issuer: 'r94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN'}
-    }, {
-      base    : {currency:'BTC', issuer: 'rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q'},
-      counter : {currency:'XRP'}
-    }, {
-      base    : {currency:'XRP'},
-      counter : {currency:'CNY', issuer:'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'}
-    }, {
-      base    : {currency:'XRP'},
-      counter : {currency:'USD', issuer: 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'}
-    }, {
-      base    : {currency:'BTC', issuer:'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'},
-      counter : {currency:'XRP'}
-    }
-    ]);
+  markets.list([{
+                  base    : {currency:"XRP"},
+                  counter : {currency:"CNY", issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'}
+                }, {
+                  base    : {currency:"XRP"},
+                  counter : {currency:'JPY', issuer: 'r94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN'}
+                }, {
+                  base    : {currency:"XRP"},
+                  counter : {currency:'USD', issuer: 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'}
+                }, {
+                  base    : {currency:'XLM', issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'},
+                  counter : {currency:'CNY', issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'}
+                }, {
+                  base    : {currency:'XLM', issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'},
+                  counter : {currency:'XRP'}
+                }, {
+                  base    : {currency:'BTC', issuer: 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'},
+                  counter : {currency:'XRP'}
+                }, {
+            	  base    : {currency:'BTC', issuer: 'rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q'},
+            	  counter : {currency:'CNY', issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'}
+            	}, {
+                  base    : {currency:'JPY', issuer: 'r94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN'},
+                  counter : {currency:'CNY', issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'}
+                }, {
+                  base    : {currency:"USD", issuer: 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'},
+                  counter : {currency:"CNY", issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'}
+                }]);
 
 
   markets.on('chartClick', function(chart){

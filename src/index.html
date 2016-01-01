@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html ng-controller="AppCtrl">
   <head>
-    <title ng-bind="pageTitle">Ripple Charts</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+    <title ng-bind="pageTitle">XRP价格行情 | 瑞波币市场行情 | 瑞狐网关</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="瑞狐网关提供瑞波网络全网各网关瑞波币XRP实时价格行情、兑换汇率、全网资金监控、瑞波币钱包下载、账号查询、入门教程、社区交流等服务，是瑞波中国社区最知名的网关，是瑞波中国最大的网关。">
 
     <!-- D3 needs this -->
     <meta charset="utf-8">
@@ -11,15 +12,15 @@
     <!-- social media tags -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@ripple">
-    <meta name="twitter:title" content="Ripple Charts">
-    <meta name="twitter:description" content="Ripple Network Data Visualization.">
+    <meta name="twitter:title" content="XRP价格行情 | 瑞波币市场行情 | 瑞狐网关">
+    <meta name="twitter:description" content="瑞波网络行情图表">
     <meta name="twitter:creator" content="@ripple">
     <meta name="twitter:image:src" content="">
-    <meta property="og:title" content="Ripple Charts" />
+    <meta property="og:title" content="XRP价格行情 | 瑞波币市场行情 | 瑞狐网关" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https:/ripplecharts.com" />
     <meta property="og:image" content="" />
-    <meta property="og:description" content="Ripple Network Data Visualization.">
+    <meta property="og:description" content="瑞波网络行情图表">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -66,49 +67,49 @@ mixpanel.init(MIXPANEL);</script><!-- end Mixpanel -->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="category">
-              <a href="#/markets" snap-close>Markets  <span class="caret"></span></a>
+              <a href="#/markets" snap-close>市场  <span class="caret"></span></a>
                 <div class="sub_wrapper">
                   <ul class="subnav">
                     <li ui-route="/markets(/.+)?" ng-class="{active:$uiRoute !== false}">
-                      <a href="#/markets" snap-close>Live Chart</a>
+                      <a href="#/markets" snap-close>实时行情</a>
                     </li>
                     <li ui-route="/multimarkets" ng-class="{active:$uiRoute !== false}">
-                      <a href="#/multimarkets" snap-close>Multi Markets</a>
+                      <a href="#/multimarkets" snap-close>自选行情</a>
                     </li>
                     <li ui-route="/active_accounts" ng-class="{active:$uiRoute !== false}">
-                      <a href="#/active_accounts" snap-close>Active Accounts</a>
+                      <a href="#/active_accounts" snap-close>活跃账号</a>
                     </li>
                     <li ui-route="/trade-volume" ng-class="{active:$uiRoute !== false}">
-                      <a href="#/trade-volume" snap-close>Trade Volume</a>
+                      <a href="#/trade-volume" snap-close>交易总量</a>
                     </li>
                   </ul>
               </div>
             </li>
             <li class="category">
-              <a href="#/value" snap-close>Network  <span class="caret"></span></a>
+              <a href="#/value" snap-close>全网  <span class="caret"></span></a>
               <div class="sub_wrapper">
               <ul class="subnav">
                 <li ui-route="/value" ng-class="{active:$uiRoute !== false}">
-                  <a href="#/value" snap-close>Value Trends</a>
+                  <a href="#/value" snap-close>资金走势</a>
                 </li>
                 <li ui-route="/history" ng-class="{active:$uiRoute !== false}">
-                  <a href="#/history" snap-close>Historical Volume</a>
+                  <a href="#/history" snap-close>历史走势</a>
                 </li>
                 <li ui-route="/metrics" ng-class="{active:$uiRoute !== false}">
-                  <a href="#/metrics" snap-close>Metrics</a>
+                  <a href="#/metrics" snap-close>各项指标</a>
                 </li>
               </ul>
             </div>
             </li>
             <li class="category">
-              <a href="#/graph" snap-close></i>Accounts  <span class="caret"></span></a>
+              <a href="#/graph" snap-close></i>账号  <span class="caret"></span></a>
               <div class="sub_wrapper">
               <ul class="subnav">
                 <li ui-route="/graph(/.+)?" ng-class="{active:$uiRoute !== false}">
-                  <a href="#/graph" snap-close>Account Explorer</a>
+                  <a href="#/graph" snap-close>账号查询</a>
                 </li>
                 <li ui-route="/accounts" ng-class="{active:$uiRoute !== false}">
-                  <a href="#/accounts" snap-close>Accounts Created</a>
+                  <a href="#/accounts" snap-close>用户数量</a>
                 </li>
               </ul>
             </div>
@@ -140,50 +141,50 @@ mixpanel.init(MIXPANEL);</script><!-- end Mixpanel -->
           </ul>
         </li>
         <li class="category">
-          <a href="#/markets" snap-close><img src="assets/icons/999_markets.svg">Markets</a>
+          <a href="#/markets" snap-close><img src="assets/icons/999_markets.svg">市场</a>
         </li>
         <li class="page">
           <ul>
             <li ui-route="/markets(/.+)?" ng-class="{active:$uiRoute !== false}">
-              <a href="#/markets" snap-close>Live Chart</a>
+              <a href="#/markets" snap-close>实时行情</a>
             </li>
             <li ui-route="/multimarkets" ng-class="{active:$uiRoute !== false}">
-              <a href="#/multimarkets" snap-close>Multi Markets</a>
+              <a href="#/multimarkets" snap-close>自选行情</a>
             </li>
             <li ui-route="/active_accounts" ng-class="{active:$uiRoute !== false}">
-              <a href="#/active_accounts" snap-close>Active Accounts</a>
+              <a href="#/active_accounts" snap-close>活跃账号</a>
             </li>
             <li ui-route="/trade-volume" ng-class="{active:$uiRoute !== false}">
-              <a href="#/trade-volume" snap-close>Trade Volume</a>
+              <a href="#/trade-volume" snap-close>交易总量</a>
             </li>
           </ul>
         </li>
         <li class="category">
-          <a href="#/value" snap-close><img src="assets/icons/999_network.svg">Network</a>
+          <a href="#/value" snap-close><img src="assets/icons/999_network.svg">全网</a>
         </li>
         <li class="page">
           <ul>
             <li ui-route="/value" ng-class="{active:$uiRoute !== false}">
-              <a href="#/value" snap-close>Value Trends</a>
+              <a href="#/value" snap-close>资金走势</a>
             </li>
             <li ui-route="/history" ng-class="{active:$uiRoute !== false}">
-              <a href="#/history" snap-close>Historical Volume</a>
+              <a href="#/history" snap-close>历史走势</a>
             </li>
             <li ui-route="/metrics" ng-class="{active:$uiRoute !== false}">
-              <a href="#/metrics" snap-close>Metrics</a>
+              <a href="#/metrics" snap-close>各项指标</a>
             </li>
           </ul>
         </li>
         <li class="category">
-          <a href="#/graph" snap-close><img src="assets/icons/999_accounts.svg"></i>Accounts</a>
+          <a href="#/graph" snap-close><img src="assets/icons/999_accounts.svg"></i>账号</a>
         </li>
         <li class="page">
           <ul>
             <li ui-route="/graph(/.+)?" ng-class="{active:$uiRoute !== false}">
-              <a href="#/graph" snap-close>Account Explorer</a>
+              <a href="#/graph" snap-close>账号查询</a>
             </li>
             <li ui-route="/accounts" ng-class="{active:$uiRoute !== false}">
-              <a href="#/accounts" snap-close>Accounts Created</a>
+              <a href="#/accounts" snap-close>用户数量</a>
             </li>
           </ul>
         </li>
@@ -202,25 +203,22 @@ mixpanel.init(MIXPANEL);</script><!-- end Mixpanel -->
 
       <footer class="footer">
         <div class="footerInner container">
-          Ripple Charts is built and maintained by Ripple, based on data from the Ripple Network.
+            本工具由瑞狐网关改进布署。数据从瑞波实时网络和RippleCharts API获取，可能有延迟或不精确。
           <div class="disclaimer">
-            Information is provided "as is" and solely as an informative resource.
-            Ripple Charts is not a trading advisor. Data may be delayed or incorrect.
+              欢迎大家加入瑞狐网关群389185252，共同讨论瑞波发展大计。
           </div>
           <div class="links">
-            <a href="https://rippletrade.com" target="_blank">Ripple Trade</a>
+            <a href="https://ripplefox.com" target="_blank">瑞狐主站</a>
             &middot;
-            <a href="https://ripple.com/blog" target="_blank">Blog</a>
+            <a href="https://jc.ripplefox.com" target="_blank">瑞波教程</a>
             &middot;
-            <a href="https://ripple.com" target="_blank">Ripple.com</a>
+            <a href="http://ripplefox.taobao.com/" target="_blank">瑞狐上海充值店</a>
             &middot;
-            <a href="https://ripple.com/privacy-policy/" target="_blank">Privacy Policy</a>
+            <a href="https://ripplefox.com/tool/balance" target="_blank">全网资金统计</a>
             &middot;
-            <a href="https://ripple.com/terms-of-use/" target="_blank">Terms of Service</a>
-            &middot;
-            <a href="https://github.com/ripple/ripplecharts-frontend" target="_blank">Github</a>
-          </div>
-
+            <a href="https://www.ripplecharts.com/" target="_blank">Ripple Charts</a>
+          </div>  
+          
           <small><a style="display:none" href="">v<%= version %></a></small>
         </div>
       </footer>

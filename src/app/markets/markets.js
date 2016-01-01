@@ -57,7 +57,7 @@ angular.module( 'ripplecharts.markets', [
       Options.base || {currency:"XRP", issuer:""};
 
     $scope.trade = store.session.get('trade') || store.get('trade') ||
-      Options.trade || {currency:"USD", issuer:"rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"};
+      Options.trade || {currency:"CNY", issuer:"rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y"};
 
     var hash = 'markets/' + $scope.base.currency +
       ($scope.base.issuer ? ':' + $scope.base.issuer : '') +

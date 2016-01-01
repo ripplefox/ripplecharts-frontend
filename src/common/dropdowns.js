@@ -80,6 +80,9 @@
         } else if (theme == 'light') {
           issuer.imageSrc = issuer.assets['logo.svg'];
         }
+        if (issuer.name == "Ripple Fox") {
+      	  issuer.imageSrc = 'assets/images/ripplefox.png';
+        }
       }
 
       function changeCurrency(selected){

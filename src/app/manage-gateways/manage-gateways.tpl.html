@@ -2,37 +2,37 @@
   <div class="sub_nav">
     <div class="container">
       <ul class="manage-menu">
-        <li ui-route="/manage-currency" ng-class="{active:$uiRoute !== false}" class="menu-manage-currency"><a href="#/manage-currency">Manage Currencies</a></li>
-        <li ui-route="/manage-gateway" ng-class="{active:$uiRoute !== false}" class="menu-manage-gateway"><a href="#/manage-gateway">Manage Gateways</a></li>
+        <li ui-route="/manage-currency" ng-class="{active:$uiRoute !== false}" class="menu-manage-currency"><a href="#/manage-currency">设置货币</a></li>
+        <li ui-route="/manage-gateway" ng-class="{active:$uiRoute !== false}" class="menu-manage-gateway"><a href="#/manage-gateway">设置网关</a></li>
       </ul>
     </div>
   </div>
   <div class="helpbox container" ng-class="{showHelp : showHelp}">
-    <h5>Featured Gateways</h5>
+    <h5>推荐网关</h5>
     <p>Select a currency and manage the gateways associated for the currency drop down for the ‘Live Chart’ page.  A list of featured gateways are listed along with a list of other gateways supported by ripplecharts.com for each currency. Custom gateways that are not listed by default can be added with the “Add gateways manually” field below.</p>
     <p>Customizations such as gateway currency pairs and custom gateways are saved in the browser's local storage. Clearing the cache or accessing ripplecharts.com on a different browser or device will restore ripplecharts.com to the default settings.</p>
   </div>
   <div class="container manage">
-    <h5>Select curency to manage gateways for that curency.</h5>
+    <h5>选择想设置的币种</h5>
        <div id="dropdown"></div>
       <div id="quote" class="dropdowns"></div>
-    <h5>Featured Gateways</h5>
+    <h5>推荐网关</h5>
       <div id="irba_gateway_curr_list"></div>
       Contact <a href="mailto:support@ripple.com">support@ripple.com</a> about becoming a featured gateway.
     <hr>
-    <h5>Other gateways</h5>
+    <h5>其他网关</h5>
     <div id="gateway_curr_list"></div>
     <hr>
-    <h5>Add gateways manually</h5>
+    <h5>添加自定义网关</h5>
       <input placeholder="Ripple Address or Name" class="manual" type="text" id="txtName" />
       <input type="button" value="Add" id="btnAdd" class="submit btn" />
       <p class="description"></p>
       <div class="col-md-6 clear">
           <div id="custom_gateway_list"></div>
       </div>
-    <span class="saved">Saved.</span>
+    <span class="saved">已保存</span>
 
-    <a class="backMarkets" href="#/markets"> &#8592; Back to Live Markets </a>
+    <a class="backMarkets" href="#/markets"> &#8592; 回到实时行情</a>
 
   </div>
 </div>

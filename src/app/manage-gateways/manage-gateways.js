@@ -29,7 +29,7 @@ angular.module( 'ripplecharts.manage-gateways', [
     Options.base || {currency:"XRP", issuer:""};
 
   $scope.trade = store.session.get('trade') || store.get('trade') ||
-    Options.trade || {currency:"USD", issuer:"rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"};
+    Options.trade || {currency:"CNY", issuer:"rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y"};
 
   //Figure out query and load dropdown accordingly
   var query = Object.keys($location.search())[0];
@@ -173,6 +173,9 @@ angular.module( 'ripplecharts.manage-gateways', [
         issuer.imageSrc = issuer.assets['logo.grayscale.svg'];
       } else if ($scope.theme == 'light') {
         issuer.imageSrc = issuer.assets['logo.svg'];
+      }
+      if (issuer.name == "Ripple Fox") {
+    	  issuer.imageSrc = 'assets/images/ripplefox.png';
       }
     }
 

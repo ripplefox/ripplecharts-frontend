@@ -8,28 +8,28 @@
     </div>
   </div>
   <div class="helpbox container" ng-class="{showHelp : showHelp}">
-    <h5>Manage Currencies</h5>
+    <h5>设置货币</h5>
     <p>A list of standard currencies supported by ripplecharts.com is listed below. Selected currencies will appear in the ‘Manage Gateways’ tab where gateways can be associated with the selected currencies. Custom currencies can be added with the “Add other currencies manually” field below.</p>
     <p>Custom currencies are saved in the browser's local storage. Clearing the cache or accessing ripplecharts.com on a different browser or device will restore ripplecharts.com to the default settings.</p>
   </div>
   <div class="container manage">
 
-    <h5>Standard Currencies</h5>
+    <h5>标准货币</h5>
     <div id="curr_list">
       <div class="col-md-6 first_column"></div>
       <div class="col-md-6 second_column"></div>
     </div>
     <hr>
 
-    <h5>Add other currencies manually</h5> 
+    <h5>添加其他类型的货币</h5> 
       <input placeholder="Currency Code" maxlength="3" class="manual" type="text" id="txtName" />
       <input type="button" value="Add" id="btnAdd" class="submit btn" />
       <span class="description"></span>
       <div class="col-md-6 clear">
         <div id="currencyList"></div>
       </div>
-    <span class="saved">Saved.</span>
-    <a class="backMarkets" href="#/markets"> &#8592; Back to Live Markets </a>
+    <span class="saved">已保存</span>
+    <a class="backMarkets" href="#/markets"> &#8592; 回到实时行情 </a>
    
 
   </div>
