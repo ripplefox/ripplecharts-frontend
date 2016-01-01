@@ -18,7 +18,9 @@ Options = {
 
     servers: [
       { host: 's-west.ripple.com', port: 443, secure: true },
-      { host: 's-east.ripple.com', port: 443, secure: true }
+      { host: 's-east.ripple.com', port: 443, secure: true },
+      { host: 's1.ripple.com', port: 443, secure: true },
+      { host: 's2.ripple.com', port: 443, secure: true }
     ],
 
     connection_offset: 0
