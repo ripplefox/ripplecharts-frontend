@@ -184,7 +184,7 @@
         "startDate":"2014-10-5",
         "accounts": [{
             "address": "rB3gZey7VWHYRqJHLoHDEJXJ2pEPNieKiS",
-            "currencies": ["JPY"]
+            "currencies": ["JPY", "ETH", "USD"]
             }],
         "hotwallets": [],
         "domain": "mr-ripple.com"

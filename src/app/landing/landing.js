@@ -103,7 +103,7 @@ angular.module( 'ripplecharts.landing', [
                   base    : {currency:'BTC', issuer: 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'},
                   counter : {currency:'XRP'}
                 }, {
-            	  base    : {currency:'BTC', issuer: 'rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q'},
+            	  base    : {currency:'BTC', issuer: 'rLEsXccBGNR3UPuPu2hUXPjziKC3qKSBun'},
             	  counter : {currency:'CNY', issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'}
             	}, {
                   base    : {currency:'JPY', issuer: 'r94s8px6kSw1uZ1MV98dhSRTvc6VMPoPcN'},
