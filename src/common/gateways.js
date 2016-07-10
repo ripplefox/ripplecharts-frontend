@@ -19,6 +19,15 @@ angular.module('gateways', [])
 			"start_date" : "2014-04-19T00:00:00Z"
 		} ];
     }
+    if (!defaultGateways["BTS"]) {
+		defaultGateways["BTS"] = [ {
+			"name" : "Ripple Fox",
+			"account" : "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
+			"featured" : true,
+			"assets" : [],
+			"start_date" : "2014-04-19T00:00:00Z"
+		} ];
+    }
     
     custom = store.session.get('userGateways') ||
       store.get('userGateways') || { };

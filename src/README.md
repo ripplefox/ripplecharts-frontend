@@ -52,3 +52,8 @@ so this HTML references them by variable for convenience.
 1. Config the main page gateways
 
 	src/app/landing/landing.js
+	
+	src/assets/gateways.json
+	
+## src/common/orderBook.js 
+var sig = 5; //significant digits for price

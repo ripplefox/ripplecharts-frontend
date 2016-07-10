@@ -108,7 +108,7 @@
         "startDate": "2014-04-19",
         "accounts": [{
             "address": "rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y",
-            "currencies": ["CNY","FMM","STR","XLM"]
+            "currencies": ["CNY","FMM","STR","XLM","BTS"]
             }],
         "hotwallets": [
           "rLSnkKvMfPD9abLoQFxQJMYyZqJcsqkL3o",
