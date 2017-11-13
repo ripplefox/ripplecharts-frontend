@@ -161,15 +161,6 @@
         "hotwallets": [],
         "domain": "www.exrp.co.kr"
     }, {
-        "name": "Ripple Exchange Tokyo",
-        "startDate": "2014-09-25",
-        "accounts": [{
-            "address": "r9ZFPSb1TFdnJwbTMYHvVwFK1bQPUCVNfJ",
-            "currencies": ["JPY"]
-            }],
-        "hotwallets": [],
-        "domain": "ripple-exchange.tokyo"
-    }, {
         "name": "Ripula",
         "startDate": "2014-10-16",
         "accounts": [{
@@ -184,7 +175,7 @@
         "startDate":"2014-10-5",
         "accounts": [{
             "address": "rB3gZey7VWHYRqJHLoHDEJXJ2pEPNieKiS",
-            "currencies": ["JPY", "ETH", "USD"]
+            "currencies": ["JPY", "ETH", "BTC"]
             }],
         "hotwallets": [],
         "domain": "mr-ripple.com"
@@ -197,6 +188,19 @@
             "currencies": ["EUR","USD"]
             }],
         "hotwallets": ["rhotcWYdfn6qxhVMbPKGDF3XCKqwXar5J4"],
+        "domain": "gatehub.net"
+    },
+    {
+        "name": "Gatehub Fifth",
+        "startDate":"2015-2-15",
+        "accounts": [{
+            "address": "rcA8X3TVMST1n3CJeAdGk1RdRCHii7N2h",
+            "currencies": ["ETH"]
+            },{
+            "address": "rcyS4CeCZVYvTiKcxj6Sx32ibKwcDHLds",
+            "currencies": ["BCH"]
+            }],
+        "hotwallets": [],
         "domain": "gatehub.net"
     }
 ]

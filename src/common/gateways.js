@@ -28,6 +28,15 @@ angular.module('gateways', [])
 			"start_date" : "2014-04-19T00:00:00Z"
 		} ];
     }
+    if (!defaultGateways["BCH"]) {
+		defaultGateways["BCH"] = [ {
+			"name" : "Gatehub Fifth",
+			"account" : "rcyS4CeCZVYvTiKcxj6Sx32ibKwcDHLds",
+			"featured" : true,
+			"assets" : [],
+			"start_date" : "2014-04-19T00:00:00Z"
+		} ];
+    }
     
     custom = store.session.get('userGateways') ||
       store.get('userGateways') || { };
