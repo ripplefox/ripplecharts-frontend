@@ -89,7 +89,7 @@ angular.module( 'ripplecharts.landing', [
                   counter : {currency:"CNY", issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'}
                 }, {
                   base    : {currency:"XRP"},
-                  counter : {currency:'JPY', issuer: 'rB3gZey7VWHYRqJHLoHDEJXJ2pEPNieKiS'}
+                  counter : {currency:'USD', issuer: 'rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq'}
                 }, {
                   base    : {currency:"XRP"},
                   counter : {currency:'USD', issuer: 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'}
@@ -106,8 +106,8 @@ angular.module( 'ripplecharts.landing', [
             	  base    : {currency:'ETH', issuer: 'rcA8X3TVMST1n3CJeAdGk1RdRCHii7N2h'},
             	  counter : {currency:'XRP'}
             	}, {
-                  base    : {currency:'BCH', issuer: 'rcyS4CeCZVYvTiKcxj6Sx32ibKwcDHLds'},
-                  counter : {currency:'XRP'}
+                  base    : {currency:'XRP'},
+                  counter : {currency:'EUR', issuer: 'rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq'}
                 }, {
                   base    : {currency:"USD", issuer: 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B'},
                   counter : {currency:"CNY", issuer: 'rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y'}
